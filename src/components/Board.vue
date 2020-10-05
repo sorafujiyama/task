@@ -1,11 +1,20 @@
 <template>
-  <header>
-      <h1 class="title">タイトル</h1>
-  </header>
+  <div>
+    <header>
+        <h1 class="title">ここにタイトル</h1>
+    </header>
+    <main>
+      <list-add/>
+    </main>
+  </div>
 </template>
 
 <script>
-  export default {
+import ListAdd from './ListAdd.vue'
 
+export default {
+  components: {
+    ListAdd
+  },
   }
 </script>
