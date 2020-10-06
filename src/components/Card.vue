@@ -1,5 +1,4 @@
 <template>
-  <!-- ★ここから追加 -->
   <div class="card">
     <button class="close-button" @click="removeCardFromList">
       ×
