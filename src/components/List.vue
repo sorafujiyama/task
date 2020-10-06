@@ -4,22 +4,26 @@
       <p class="list-title">{{ title }}</p>
       <div class="deletelist" @click="removeList">×</div>
     </div>
-    <card v-for="(item, index) in cards"
-          :body="item.body"
-          :key="item.id"
-          :cardIndex="index"
-          :listIndex="listIndex"
-    />
-    <card-add :listIndex="listIndex"/>
+    <draggable group="cards" :list="cards" @end="$emit('change')">
+      <card v-for="(item, index) in cards"
+            :body="item.body"
+            :key="item.id"
+            :cardIndex="index"
+            :listIndex="listIndex"
+      />
+      <card-add :listIndex="listIndex"/>
+    </draggable>
   </div>
 </template>
 
 <script>
 import CardAdd from './CardAdd'
 import Card from './Card'
+import draggable from 'vuedraggable'
 
   export default {
     components: {
+      draggable,
       CardAdd,
       Card
     },
