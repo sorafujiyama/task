@@ -4,7 +4,7 @@
         <h1 class="title">ここにタイトル</h1>
     </header>
     <main>
-      <div class="list-index">
+      <draggable :list="lists" class="list-index">
         <list v-for="(item,index) in lists"
           :key="item.id"
           :title="item.title"
@@ -13,18 +13,20 @@
           @change="movingCard"
         />
         <list-add />
-      </div>
+      </draggable>
     </main>
   </div>
 </template>
 
 <script>
+import draggable from 'vuedraggable'
 import ListAdd from './ListAdd.vue'
 import List from'./List'
 import { mapState } from'vuex'
 
 export default {
   components: {
+    draggable,
     ListAdd,
     List,
   },
