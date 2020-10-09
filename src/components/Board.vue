@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-        <h1 class="title">ここにタイトル</h1>
+        <h1 class="title">task</h1>
     </header>
     <main>
       <draggable :list="lists" @end="movingList" class="list-index">
