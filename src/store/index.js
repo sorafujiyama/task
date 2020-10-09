@@ -11,14 +11,14 @@ const store = new Vuex.Store({
       {
         title:'Backlog',
         cards: [
-          { body:'English'},
-          { body:'Mathematics'},
+          { body:'テスト'},
+          { body:'テスト１'},
         ]
       },
       {
         title:'ToDo',
         cards: [
-          { body:'Science'}
+          { body:'テスト２'}
         ]
       },
       {
