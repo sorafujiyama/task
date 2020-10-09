@@ -10,15 +10,15 @@ task
 ## 本番環境
 
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## 使用技術(開発環境)
+### フロントエンド
+HTML,CSS,javascript,Vue.js,Vuex,Vue.Draggable
 
-### Lints and fixes files
-```
-yarn lint
-```
+## ソース管理
+GitHub
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## エディタ
+VSCorde
+
+## 今後実装したい機能
+新規会員登録なしでGoogleアカウントですぐにログインできる実装をしたい。
